@@ -11,4 +11,4 @@ INTEGRANTES:
 *Ramos Vargas Geraldine Nicol Elizabelth
 *Vilchez Yurivilca David Arturo
 
-https://user-images.githubusercontent.com/109124389/178419170-f8e48971-ccfd-45ab-ac15-66b1a39cdaee.png
+![prototipo](https://user-images.githubusercontent.com/109124389/178419170-f8e48971-ccfd-45ab-ac15-66b1a39cdaee.png)
