@@ -1,0 +1,115 @@
+.nav{
+   display:flex;
+   align-items: center;
+   justify-align: center;
+}
+
+.navbar{
+    margin-bottom: 0 !important;
+}
+
+.navbar-default{
+    background-color: black !important;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+}
+
+.padre {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hijo {
+    width: 100%;
+    height: 100%;
+}
+
+.text-creado {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 200;
+    font: 3.5rem Georgia, Serif;
+
+}
+
+.text-usuario {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 200;
+    font: italic bold 30px Georgia, Serif;
+
+}
+
+.titulo {
+    color: grey;
+    font-size: 6rem;
+    margin-top: 0;
+}
+
+.asistencia-container {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.asistencia-boton{
+    background-color: #41DCD3;
+    color: black;
+    border-radius: 15px;
+    font-size: 1.2rem;
+}
+
+.asistencia-boton:hover{
+        background-color: white;
+    }
+
+
+.img-login{
+        width:100%;
+        height: 100%;
+    }
+    
+.img-doctor{
+    height: 300px;    
+}
+
+.img-form{
+    opacity: 0.4;
+}
+
+    
+@media (max-width: 690px){
+    .padre{
+        flex-direction:column;
+    }
+}
+
+@media (min-width: 768px){
+    .col-sm-12 {
+        width: 100%;
+        
+    }
+}
+    
+
+@media (max-width: 790px){
+
+    .img-form{
+        display: none;
+    }
+    
+}

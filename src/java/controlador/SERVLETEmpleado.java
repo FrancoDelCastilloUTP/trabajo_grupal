@@ -7,18 +7,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import modelo.DAOEmpleado;
+import modelo.DAOHorarios;
+import modelo.DAOTipoDocumento;
+import modelo.DAOUsuario;
 import uml.Empleado;
-import modelo.OPERACIONESEmpleado;
-import modelo.OPERACIONESHorarios;
-import modelo.OPERACIONESTipoDocumento;
-import modelo.OPERACIONESUsuario;
 
 public class SERVLETEmpleado extends HttpServlet {
 
-    OPERACIONESEmpleado empSQL = new OPERACIONESEmpleado();
-    OPERACIONESUsuario usuariosSQL = new OPERACIONESUsuario();
-    OPERACIONESHorarios horariosSQL = new OPERACIONESHorarios();
-    OPERACIONESTipoDocumento tipoDocSQL = new OPERACIONESTipoDocumento();
+    DAOEmpleado empSQL = new DAOEmpleado();
+    DAOUsuario usuariosSQL = new DAOUsuario();
+    DAOHorarios horariosSQL = new DAOHorarios();
+    DAOTipoDocumento tipoDocSQL = new DAOTipoDocumento();
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

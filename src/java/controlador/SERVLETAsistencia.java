@@ -11,13 +11,14 @@ import javax.servlet.http.HttpSession;
 import uml.Asistencias;
 import uml.Empleado;
 
-import modelo.OPERACIONESEmpleado;
+
 import modelo.DAOAsistencias;
+import modelo.DAOEmpleado;
 
 public class SERVLETAsistencia extends HttpServlet {
 
     DAOAsistencias obj=new DAOAsistencias();
-    OPERACIONESEmpleado empSQL = new OPERACIONESEmpleado();
+    DAOEmpleado empSQL = new DAOEmpleado();
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

@@ -5,74 +5,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mis Datos</title>
+        <link href="./css/estilos-version-1.css" rel="stylesheet" />
         <%@include file="includes/MisRecursos.jsp" %>
     </head>
-              <style>
-        .main {
             
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .padre {
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 60px;
-        }
-
-        
-        
-        .hijo {
-            width: 430px;
-            height: 100%;
-        }
-
-        .text-creado {
-            
-            
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: 200;
-            font: 3.5rem Georgia, Serif;
-            
-        }
-
-        .text-usuario {
-            color: #0075b0;
-            margin: 0 auto;
-            text-align: center;
-            font-weight: 200;
-            font: italic bold 30px Georgia, Serif;
-            
-        }
-        
-        .titulo {
-            color: #416CDC;
-            font-size: 6rem;
-            background-color: #41DCD3;
-            margin-top: 0;
-            padding: 20px;
-        }
-        
-        .asistencia-container {
-            background-color: #41DCD3;
-            padding: 40px;
-        }
-        
-        .asistencia-boton{
-            background-color: #416CDC;
-            color: white;
-            border-radius: 15px;
-            font-size: 1.2rem;
-        }
-        
-        .asistencia-boton:hover{
-                background-color: white;
-            }
-    </style>
     <body style="background-color: white;">
         <c:if test="${sessionScope.usuario == null}">
             <c:redirect url = "index.jsp"/>
@@ -111,8 +47,8 @@
                                     <form role="form" action="ControlEmpleado" method="post">
                                         <div class="row">
                                             <div class="col-sm-2">
-                                                <div class="form-group">
-                                                    <img src="img/asistencia-img.webp" width="100%"/>
+                                                <div class="form-group"> 
+                                                    <img src="img/asistencia-img.webp" width="600px" class="img-form"/>
                                                 </div>
 
                                             </div>
@@ -184,7 +120,7 @@
                                                 <input type="hidden" name="id_usuario" value="<c:out value="${emp.idUsuario}"/>" />
 
                                                 <input type="hidden" name="accion" value="guardar_cambios">
-                                                    <button type="submit" class="btn asistencia-boton">Guardando Cambios</button>
+                                                    <button type="submit" class="btn asistencia-boton">Guardar Cambios</button>
                                             </div>
 
 
